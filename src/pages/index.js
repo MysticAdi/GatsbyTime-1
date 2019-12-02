@@ -1,11 +1,10 @@
-import React,{Component} from "react";
+import React from "react";
 import {Link} from "gatsby";
-import {Banner,TextWrapper, MoreText} from "../styles/IndexStyles";
-import { relative } from "path";
+import {Banner,TextWrapper} from "../styles/IndexStyles.js";
 
 
 export default () => (
-    <div style ={{position:relative}}>
+    <div style ={{position:'relative'}}>
         <Banner></Banner>
         <TextWrapper>
             <div>
@@ -16,6 +15,6 @@ export default () => (
                 <Link to="/works">My Works</Link>
             </div>
         </TextWrapper>
-        <MoreText>Learn More</MoreText>
+        
     </div>
 )
